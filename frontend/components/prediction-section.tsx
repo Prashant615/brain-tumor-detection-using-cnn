@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Upload, ImageIcon, Loader2, CheckCircle, AlertCircle } from "lucide-react"
 import { useDropzone } from "react-dropzone"
+import { getApiEndpoint } from "@/lib/config"
 
 type PredictionResult = {
   label: string;
@@ -50,7 +51,7 @@ export function PredictionSection() {
     formData.append("file", selectedFile);
   
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch(getApiEndpoint("/predict"), {
         method: "POST",
         body: formData,
       });

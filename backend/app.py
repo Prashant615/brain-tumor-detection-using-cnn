@@ -12,6 +12,10 @@ CORS(app)  # ✅ Enable CORS for all routes
 model = tf.keras.models.load_model("brain_tumor_cnn_model.h5")
 IMAGE_SIZE = 100  # Make sure it matches the training size
 
+@app.route("/", methods=["GET"])
+def index():
+    return jsonify({"message": "Welcome to the Brain Tumor Detection API"}), 200
+
 @app.route("/predict", methods=["POST"])
 def predict():
     if "file" not in request.files:

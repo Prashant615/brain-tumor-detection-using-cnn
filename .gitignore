@@ -4,6 +4,7 @@ backend/__pycache__/
 *.pyc
 *.pyo
 *.pyd
+backend/env
 
 # Keep model files - nothing needed, just don't ignore *.h5
 

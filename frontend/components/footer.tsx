@@ -23,7 +23,7 @@ export function Footer() {
                 </h3>
                 <div className="space-y-4">
                   <p className="text-gray-300">
-                    This project is developed as part of the Bachelor of Engineering program in Computer Engineering,
+                    This project is developed as part of the Bachelor of Engineering program in Information Science and Engineering,
                     focusing on the application of artificial intelligence and machine learning in medical image
                     analysis.
                   </p>
