@@ -35,3 +35,8 @@ Thumbs.db
 
 backend/brain/venv*/  # if you use venv
 backend/brain/Lib/    # excludes site-packages
+
+backend/brain/Lib/
+backend/brain/venv*/
+*.pyc
+__pycache__/
