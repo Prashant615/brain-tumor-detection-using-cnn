@@ -32,3 +32,6 @@ Thumbs.db
 
 # Editor settings (optional)
 .vscode/
+
+backend/brain/venv*/  # if you use venv
+backend/brain/Lib/    # excludes site-packages
